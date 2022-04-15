@@ -1,4 +1,5 @@
 #include <iostream>
+#include<string.h>
 
 using namespace std;
 
@@ -14,6 +15,6 @@ int main(int argc, char *argv[])
 	cout << "                         " << endl;
 
 	cout << "What Do you whant to do:" << endl;
-	static string UserInput;
-
+	string UserInput;
+	getline(cin, UserInput );
 }
