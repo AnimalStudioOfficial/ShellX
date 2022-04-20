@@ -16,5 +16,18 @@ int main(int argc, char *argv[])
 
 	cout << "What Do you whant to do:" << endl;
 	string UserInput;
-	getline(cin, UserInput );
+	
+    cin.getline(UserInput, sizeof(input));
+	switch() {
+   case   :
+      
+      break; //optional
+   case  :
+      
+      break; //optional
+  
+   
+   default : //Optional
+     
+}
 }
