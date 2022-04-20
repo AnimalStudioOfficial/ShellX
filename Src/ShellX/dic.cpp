@@ -13,15 +13,60 @@ void dichelp() {
 // C++ Dic
 void dicCPPhelp() {
 	cout << "[1] Functions" << endl;
+	cout << "[2] Goto" << endl;
 }
 
+static void dicCPPGoto() {
+	string dicCPPGotoString = "A goto statement provides an unconditional jump from the goto to a labeled statement in the same function."
+                "                        \n"
+               "NOTE: Use of goto statement is highly discouraged because it makes difficult to trace the"
+               "control flow of a program, making the program hard to understand and hard to modify. Any"
+               "program that uses a goto can be rewritten so that it doesn't need the goto."
+               "         \n"
+			   "Syntax\n"
+			   "------\n"
+			   "The syntax of a goto statement in C++ is:\n"
+			   "-----------------------------------------\n"
+			   "goto label;\n"
+			   "..\n"
+			   ".\n"
+			   "label: statement;\n"
+			   "------------------------------------------\n"
+			   "Where label is an identifier that identifies a labeled statement. A labeled statement is any\n"
+			   "statement that is preceded by an identifier followed by a colon (:).\n";
+          cout << dicCPPGotoString << endl;
+   dicCPPGotoString.clear();
+	
+}
 
 static void dicCPPFunctions() {
 	cout << "c++ Functions" << endl;
 	cout << "-------------" << endl;
+	cout << "What is a c++ Function?" << endl;
+	cout << "-----------------------" << endl;
+	cout << "A function is a group of statements that together perform a task. Every C++ program has at" << endl;
+	cout << "least one function, which is main(), and all the most trivial programs can define additional" << endl;
+	cout << "functions." << endl;
+	cout << "                                                                                            " << endl;
+	cout << "You can divide up your code into separate functions. How you divide up your code among" << endl;
+	cout << "different functions is up to you, but logically the division usually is such that each function" << endl;
+	cout << "performs a specific task." << endl;
+	cout << "                                                                                               " << endl;
+	cout << "A function declaration tells the compiler about a function's name, return type, and" << endl;
+	cout << "parameters. A function definition provides the actual body of the function." << endl;
+	cout << "                                                                           " << endl;
+	cout << "The C++ standard library provides numerous builtin functions that your program can call." << endl;
+	cout << "For example, function strcat() to concatenate two strings, function memcpy() to copy one" << endl;
+	cout << "memory location to another location and many more functions." << endl;
+	cout << "                                                            " << endl;
+	cout << "A function is known with various names like a method or a sub-routine or a procedure etc." << endl;
+	cout << "                                                                                         " << endl;
 
+	cout << "------------------------------------------------------------------------------------------" << endl;
 	cout << "Defining a Function:" << endl;
 	cout << "--------------------" << endl;
+	cout << "The general form of a C++ function definition is as follows:" << endl;
+	cout << "------------------------------------------------------------" << endl;
 	cout << "return_type function_name( parameter list ) {" << endl;
 	cout << " body of the function" << endl;
 	cout << "}" << endl;
@@ -91,6 +136,9 @@ void diccpp() {
 
 	if (dicCppuserinput == "1") {
 		dicCPPFunctions();
+	}
+	if (dicCppuserinput == "2") {
+		dicCPPGoto();
 	}
 
 
